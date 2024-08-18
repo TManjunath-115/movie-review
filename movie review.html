@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieReview</title>
+    <style>
+        h1{
+            text-align: center;
+            color:black;
+            text-decoration: 1px solid black underline;
+        }
+        img{
+            float: right;
+            width: 60%;
+        }
+        form{
+            margin-top:10%;
+            width: 50%;
+            border: 1px solid black;
+            padding: 20px;
+            margin: auto;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            padding: 8px 10px;
+            margin-left: 41%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <form >
+    <h1>Film Review</h1>
+   <label for="director">Director:
+        <input type="text" name="director" id="director">
+   </label>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyRNu-M72M4xDplAPxwgcmHRvJwj9PyP0jBg&s" >
+   <br><br>
+   <p>Did you like the film?</p>
+   <label for="yes">
+    <input type="radio" name="rivew" id="yes">Yes
+   </label>
+   <label for="no">
+    <input type="radio" name="rivew" id="no">No
+   </label>
+   <br><br>
+   <label for="rating">Give your rating
+    <input type="number" name="rating" id="rating" min="1" max="10">
+   </label>
+   <br><br>
+   <p>what Was Your favourite Part?</p>
+   <textarea name="favoritepart" id="favoritepart"></textarea>
+   <br><br><br>
+   <button type="submit">Submit</button>
+   </form>
+</body>
+</html>
